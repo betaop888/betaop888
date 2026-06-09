@@ -1,0 +1,24 @@
+<svg width="1400" height="420" viewBox="0 0 1400 420" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1400" height="420" fill="#080808"/>
+  <path d="M0 0H1400V420H0V0Z" fill="#080808"/>
+  <path d="M0 0H1400V16H0V0Z" fill="#FF1F3D"/>
+  <path d="M0 404H1400V420H0V404Z" fill="#FF1F3D"/>
+  <path d="M958 -40H1400V420H742L958 -40Z" fill="#13090B"/>
+  <path d="M1047 -40H1400V420H831L1047 -40Z" fill="#1D0B0F"/>
+  <path d="M1138 -40H1400V420H922L1138 -40Z" fill="#2A0D14"/>
+  <path d="M1018 0L821 420" stroke="#FF1F3D" stroke-width="3"/>
+  <path d="M1110 0L913 420" stroke="#FFFFFF" stroke-opacity="0.22" stroke-width="2"/>
+  <path d="M1202 0L1005 420" stroke="#FF1F3D" stroke-opacity="0.55" stroke-width="2"/>
+  <circle cx="1156" cy="110" r="118" fill="#FF1F3D" fill-opacity="0.08"/>
+  <circle cx="1246" cy="278" r="190" fill="#FF1F3D" fill-opacity="0.06"/>
+  <rect x="62" y="78" width="10" height="264" fill="#FF1F3D"/>
+  <rect x="94" y="78" width="520" height="2" fill="#FF1F3D"/>
+  <rect x="94" y="340" width="640" height="2" fill="#FFFFFF" fill-opacity="0.24"/>
+  <text x="94" y="158" fill="#FFFFFF" font-family="Arial, Helvetica, sans-serif" font-size="74" font-weight="800" letter-spacing="2">NERTIN</text>
+  <text x="96" y="214" fill="#FF1F3D" font-family="Consolas, Monaco, monospace" font-size="30" font-weight="700">betaop888</text>
+  <text x="96" y="268" fill="#FFFFFF" fill-opacity="0.88" font-family="Arial, Helvetica, sans-serif" font-size="28">Web apps, Discord tools, Python utilities</text>
+  <text x="96" y="306" fill="#FFFFFF" fill-opacity="0.58" font-family="Consolas, Monaco, monospace" font-size="20">Next.js / TypeScript / JavaScript / Python / PostgreSQL</text>
+  <rect x="1020" y="130" width="230" height="230" rx="28" stroke="#FF1F3D" stroke-width="5"/>
+  <rect x="1050" y="160" width="170" height="170" rx="18" stroke="#FFFFFF" stroke-opacity="0.38" stroke-width="3"/>
+  <path d="M1094 245L1132 283L1192 207" stroke="#FF1F3D" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
