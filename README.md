@@ -45,7 +45,12 @@
 
 <p align="center">
   <img height="165" src="https://github-readme-stats.vercel.app/api?username=betaop888&show_icons=true&hide_border=true&bg_color=090909&title_color=e60023&text_color=ffffff&icon_color=e60023" alt="GitHub stats" />
-  <img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=betaop888&layout=compact&hide_border=true&bg_color=090909&title_color=e60023&text_color=ffffff" alt="Top languages" />
+</p>
+
+## Языки в репах
+
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=betaop888&layout=compact&hide_border=true&bg_color=090909&title_color=e60023&text_color=ffffff" alt="Top languages" />
 </p>
 
 ## Контакт
