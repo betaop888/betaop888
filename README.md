@@ -35,10 +35,6 @@
 
 | Проект | Что внутри | Стек |
 | --- | --- | --- |
-| [WINDSHOP](https://github.com/betaop888/WINDSHOP) | Маркетплейс предметов Minecraft для сервера WIND: Discord OAuth, каталог, заявки, профили, отзывы и админка. | Next.js, TypeScript, Prisma, PostgreSQL, Tailwind |
-| [Wind Petition](https://github.com/betaop888/windpetition) | Система голосований и решений: роли, Discord-вход, публичные и министерские голосования, админ-панель. | Next.js, JavaScript, PostgreSQL, Vercel |
-| [WIND Север](https://github.com/betaop888/windpalata) | Сайт регламента адвокатской палаты: разделы, тарифы, калькулятор и единый JSON-источник данных. | Python, HTML, CSS, JavaScript |
-| [Винд цены](https://github.com/betaop888/wind.github.io) | Статический прайс Minecraft-предметов с поиском, фильтрами и генератором данных. | Python, HTML, CSS, JavaScript |
 | Minify Dota 2 | Локальный инструмент для установки набора Dota 2-модов, которые упрощают визуальные эффекты и помогают с FPS. | Python, Tkinter |
 
 ## Что я обычно собираю
