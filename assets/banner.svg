@@ -1,91 +1,67 @@
 <svg width="1400" height="420" viewBox="0 0 1400 420" fill="none" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <pattern id="dots" width="18" height="18" patternUnits="userSpaceOnUse">
-      <circle cx="3" cy="3" r="2" fill="#ffffff" opacity=".55"/>
+    <pattern id="scanlines" width="1" height="8" patternUnits="userSpaceOnUse">
+      <rect width="1" height="2" fill="#ffffff" opacity="0.10"/>
     </pattern>
-    <pattern id="scan" width="1" height="7" patternUnits="userSpaceOnUse">
-      <rect width="1" height="2" fill="#ffffff" opacity=".10"/>
+    <pattern id="dots" width="20" height="20" patternUnits="userSpaceOnUse">
+      <circle cx="4" cy="4" r="2.4" fill="#ffffff" opacity="0.62"/>
     </pattern>
-    <filter id="rough">
-      <feTurbulence type="fractalNoise" baseFrequency="0.022" numOctaves="3" seed="9"/>
-      <feDisplacementMap in="SourceGraphic" scale="3"/>
-    </filter>
-    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
-      <feDropShadow dx="10" dy="12" stdDeviation="0" flood-color="#000000" flood-opacity=".95"/>
+    <filter id="hardShadow" x="-10%" y="-20%" width="130%" height="150%">
+      <feDropShadow dx="12" dy="12" stdDeviation="0" flood-color="#050505" flood-opacity="1"/>
     </filter>
   </defs>
 
-  <rect width="1400" height="420" fill="#090909"/>
-  <rect width="1400" height="420" fill="#e60023"/>
-  <path d="M0 36L247 0H1400V420H0V36Z" fill="#d60020"/>
-  <path d="M0 0H132L0 118V0Z" fill="#050505"/>
-  <path d="M1400 0V420H1202L1400 208V0Z" fill="#050505"/>
-  <path d="M34 365L260 271L469 420H0V382L34 365Z" fill="#050505"/>
-  <path d="M917 0L769 133L910 249L742 420H1400V0H917Z" fill="#0b0b0b"/>
+  <rect width="1400" height="420" fill="#080808"/>
+  <path d="M0 0H1400V420H0V0Z" fill="#e60023"/>
 
-  <g opacity=".34">
-    <rect x="0" y="0" width="1400" height="420" fill="url(#scan)"/>
-    <path d="M65 44H1335M65 95H1335M65 146H1335M65 197H1335M65 248H1335M65 299H1335M65 350H1335" stroke="#000" stroke-opacity=".18"/>
-    <path d="M112 0V420M244 0V420M376 0V420M508 0V420M640 0V420M772 0V420M904 0V420M1036 0V420M1168 0V420M1300 0V420" stroke="#fff" stroke-opacity=".07"/>
+  <path d="M0 0H438L272 420H0V0Z" fill="#070707"/>
+  <path d="M1400 0V420H982L1165 0H1400Z" fill="#070707"/>
+  <path d="M260 0H392L224 420H92L260 0Z" fill="#ffffff"/>
+  <path d="M1110 0H1260L1076 420H926L1110 0Z" fill="#ffffff"/>
+  <path d="M298 0H358L190 420H130L298 0Z" fill="#e60023"/>
+  <path d="M1160 0H1228L1044 420H976L1160 0Z" fill="#e60023"/>
+
+  <g opacity="0.45">
+    <rect width="1400" height="420" fill="url(#scanlines)"/>
+    <path d="M0 64H1400M0 128H1400M0 192H1400M0 256H1400M0 320H1400M0 384H1400" stroke="#050505" stroke-opacity="0.20"/>
+    <path d="M70 0V420M210 0V420M350 0V420M490 0V420M630 0V420M770 0V420M910 0V420M1050 0V420M1190 0V420M1330 0V420" stroke="#ffffff" stroke-opacity="0.09"/>
   </g>
 
-  <g filter="url(#rough)">
-    <path d="M-15 103L223 65L178 127L395 96L365 174L588 126L526 211L692 182L626 268L812 243L733 342L990 318L954 420H-15V103Z" fill="#ffffff"/>
-    <path d="M0 129L197 97L155 153L382 127L345 196L548 154L486 235L656 209L590 291L756 272L675 370L903 346L869 420H0V129Z" fill="#050505"/>
+  <path d="M458 44L1048 22L1106 128L1042 190L1114 266L1050 376L402 402L334 300L396 222L344 124L458 44Z" fill="#ffffff" filter="url(#hardShadow)"/>
+  <path d="M480 74L1026 54L1070 126L1012 184L1075 267L1029 344L426 368L382 296L438 224L390 132L480 74Z" fill="#090909"/>
+  <path d="M505 99L655 92L635 169L478 174L505 99Z" fill="#e60023"/>
+  <path d="M420 242L1038 218L1054 259L436 285L420 242Z" fill="#e60023"/>
+
+  <g filter="url(#hardShadow)">
+    <text x="482" y="205" fill="#ffffff" font-family="Arial Black, Impact, Arial, sans-serif" font-size="116" font-weight="900" letter-spacing="5">NERTIN</text>
+    <text x="489" y="311" fill="#ffffff" font-family="Arial Black, Impact, Arial, sans-serif" font-size="70" font-weight="900" letter-spacing="6">BETAOP888</text>
   </g>
 
-  <g opacity=".9">
-    <path d="M1001 44L1194 21L1320 112L1263 241L1074 267L957 171L1001 44Z" fill="#ffffff"/>
-    <path d="M1017 64L1185 44L1294 123L1245 223L1083 245L982 163L1017 64Z" fill="#050505"/>
-    <path d="M1045 91L1167 76L1260 137L1215 197L1100 217L1019 154L1045 91Z" fill="#e60023"/>
-    <path d="M1076 113L1182 99M1060 139L1213 121M1083 166L1228 148M1116 190L1202 177" stroke="#050505" stroke-width="9"/>
-    <path d="M1012 62L1294 123M982 163L1245 223M1083 245L1185 44" stroke="#fff" stroke-opacity=".45" stroke-width="3"/>
+  <text x="494" y="205" fill="#e60023" font-family="Arial Black, Impact, Arial, sans-serif" font-size="116" font-weight="900" letter-spacing="5" opacity="0.18">NERTIN</text>
+  <text x="497" y="311" fill="#e60023" font-family="Arial Black, Impact, Arial, sans-serif" font-size="70" font-weight="900" letter-spacing="6" opacity="0.24">BETAOP888</text>
+
+  <g opacity="0.95">
+    <path d="M74 52L198 28L176 126L227 141L190 224L74 234L100 151L48 134L74 52Z" fill="#ffffff"/>
+    <path d="M106 80L170 68L158 121L195 133L170 190L103 196L120 139L82 126L106 80Z" fill="#080808"/>
+    <path d="M94 286L198 260L218 366L80 383L94 286Z" fill="#080808"/>
+    <path d="M110 305L180 288L190 348L100 360L110 305Z" fill="#ffffff"/>
   </g>
 
-  <g opacity=".95">
-    <path d="M892 -8L995 73L940 125L1017 184L965 238L1037 295L934 430H813L922 303L840 242L897 187L814 120L892 -8Z" fill="#ffffff"/>
-    <path d="M923 2L1003 65L945 121L1022 180L974 230L1046 288L932 420H861L970 299L886 238L944 182L862 116L923 2Z" fill="#050505"/>
-    <path d="M936 45L973 73M904 121L946 154M948 197L994 232M911 306L951 341" stroke="#e60023" stroke-width="10"/>
+  <g opacity="0.95">
+    <path d="M1208 72L1324 48L1344 146L1288 174L1330 246L1240 312L1148 246L1186 170L1134 132L1208 72Z" fill="#080808"/>
+    <path d="M1220 92L1302 76L1316 137L1264 159L1302 231L1240 276L1178 233L1214 163L1170 129L1220 92Z" fill="#ffffff"/>
+    <path d="M1234 113L1278 104L1288 136L1248 151L1276 222L1239 248L1201 222L1230 154L1197 129L1234 113Z" fill="#e60023"/>
   </g>
 
-  <g transform="translate(80 58)" filter="url(#shadow)">
-    <path d="M52 31L355 5L328 111L397 121L383 219L56 254L67 178L0 165L52 31Z" fill="#ffffff"/>
-    <path d="M79 61L329 40L307 123L367 133L356 196L83 226L94 152L35 142L79 61Z" fill="#050505"/>
-    <text x="96" y="132" fill="#ffffff" font-family="Arial Black, Impact, Arial, sans-serif" font-size="86" font-weight="900" letter-spacing="3">NER</text>
-    <text x="244" y="133" fill="#e60023" font-family="Arial Black, Impact, Arial, sans-serif" font-size="86" font-weight="900" letter-spacing="3">TIN</text>
+  <g opacity="0.72">
+    <rect x="824" y="42" width="250" height="140" fill="url(#dots)"/>
+    <rect x="242" y="246" width="260" height="132" fill="url(#dots)"/>
   </g>
 
-  <g transform="translate(402 126)" filter="url(#shadow)">
-    <path d="M15 18L568 0L590 118L548 169L24 157L0 58L15 18Z" fill="#ffffff"/>
-    <path d="M45 39L543 24L558 104L529 138L53 129L31 62L45 39Z" fill="#050505"/>
-    <path d="M69 55L156 50L146 120L61 119L69 55Z" fill="#e60023"/>
-    <text x="77" y="111" fill="#ffffff" font-family="Arial Black, Impact, Arial, sans-serif" font-size="74" font-weight="900">B</text>
-    <text x="171" y="110" fill="#ffffff" font-family="Arial Black, Impact, Arial, sans-serif" font-size="74" font-weight="900" letter-spacing="5">ETAOP888</text>
-  </g>
-
-  <g transform="translate(292 295)">
-    <path d="M0 18L552 0L585 56L42 68L0 18Z" fill="#050505"/>
-    <path d="M21 26L542 9L560 42L55 53L21 26Z" fill="#ffffff"/>
-    <text x="63" y="42" fill="#050505" font-family="Consolas, Monaco, monospace" font-size="22" font-weight="800" letter-spacing="3">WEB APPS / DISCORD TOOLS / PYTHON UTILITIES</text>
-  </g>
-
-  <g>
-    <path d="M110 300L159 279L151 330L198 351L147 365L134 414L107 369L55 373L89 334L72 286L110 300Z" fill="#ffffff"/>
-    <path d="M1194 284L1242 264L1235 314L1281 337L1230 350L1217 398L1191 354L1139 358L1173 319L1156 272L1194 284Z" fill="#e60023"/>
-    <path d="M1219 71L1246 60L1242 88L1268 101L1240 108L1233 135L1218 110L1190 112L1208 91L1199 65L1219 71Z" fill="#ffffff"/>
-  </g>
-
-  <g opacity=".8">
-    <rect x="1095" y="36" width="13" height="13" fill="#ffffff"/>
-    <rect x="1120" y="36" width="13" height="13" fill="#ffffff"/>
-    <rect x="1145" y="36" width="13" height="13" fill="#ffffff"/>
-    <rect x="1170" y="36" width="13" height="13" fill="#ffffff"/>
-    <rect x="1195" y="36" width="13" height="13" fill="#ffffff"/>
-    <rect x="1220" y="36" width="13" height="13" fill="#ffffff"/>
-  </g>
-
-  <path d="M0 0H1400V14H0V0Z" fill="#050505"/>
-  <path d="M0 406H1400V420H0V406Z" fill="#050505"/>
-  <rect x="46" y="35" width="1308" height="350" rx="0" stroke="#ffffff" stroke-opacity=".34" stroke-width="2" stroke-dasharray="10 9"/>
-  <rect x="59" y="48" width="1282" height="324" rx="0" stroke="#050505" stroke-opacity=".8" stroke-width="3"/>
+  <path d="M334 360L276 392H526L570 360H334Z" fill="#ffffff"/>
+  <path d="M870 38L916 12H1120L1082 42L870 38Z" fill="#ffffff"/>
+  <path d="M0 0H1400V16H0V0Z" fill="#080808"/>
+  <path d="M0 404H1400V420H0V404Z" fill="#080808"/>
+  <rect x="34" y="34" width="1332" height="352" stroke="#ffffff" stroke-opacity="0.48" stroke-width="2" stroke-dasharray="12 9"/>
+  <rect x="50" y="50" width="1300" height="320" stroke="#080808" stroke-width="4"/>
 </svg>
