@@ -1,19 +1,4 @@
-<p align="center">
-  <img src="./assets/banner.svg" alt="nertin / betaop888" width="100%" />
-</p>
 
-<p align="center">
-  <a href="https://github.com/betaop888">
-    <img src="https://img.shields.io/badge/github-betaop888-090909?style=for-the-badge&logo=github&logoColor=white&labelColor=e60023" alt="GitHub" />
-  </a>
-  <a href="https://t.me/+Lho6vMu9wGEyYjYy">
-    <img src="https://img.shields.io/badge/telegram-contact-090909?style=for-the-badge&logo=telegram&logoColor=white&labelColor=e60023" alt="Telegram" />
-  </a>
-</p>
-
-## nertin
-
-Пишу небольшие инструменты, сайты и интерфейсы. беру задачу, разбираюсь, собираю рабочую версию и потом довожу ее
 
 Чаще всего юзаю Python, JavaScript, TypeScript и Next.js. Нравятся проекты которые приносят пользу утилиты, сайты
 
