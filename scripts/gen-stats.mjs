@@ -86,7 +86,7 @@ const restBytes = rest.reduce((s, [, v]) => s + v, 0);
 const rows = [...top.map(([n, v]) => [n, v]), ...(restBytes ? [['Other', restBytes]] : [])];
 
 const pct = (v) => (v / total) * 100;
-const fmt = (p) => (p >= 10 ? String(Math.round(p)) : p.toFixed(1).replace(/\.0$/, ''));
+const fmt = (p) => p.toFixed(1);
 
 console.log(
   rows.map(([n, v]) => `${n} ${fmt(pct(v))}%`).join(' · ')
@@ -95,56 +95,59 @@ console.log(
 const THEMES = {
   dark: {
     file: 'langs-dark.svg',
-    bg: '#0f1318',
-    stroke: '#222a33',
-    name: '#dbe2ea',
-    pct: '#8b95a3',
-    track: '#1d232c',
-    fill: '#4d8dff',
-    caption: '#6b7684',
+    bg: '#101623',
+    stroke: '#1f2a3a',
+    name: '#dfe7f2',
+    pct: '#93a1b8',
+    track: '#1c2635',
+    fill: '#6ea8ff',
+    accent: '#6ea8ff',
+    caption: '#7c8aa0',
   },
   light: {
     file: 'langs-light.svg',
     bg: '#ffffff',
-    stroke: '#d8dee4',
-    name: '#1f2733',
-    pct: '#57606a',
-    track: '#e8ecf1',
-    fill: '#4d8dff',
-    caption: '#6b7684',
+    stroke: '#dde4ee',
+    name: '#182335',
+    pct: '#55647a',
+    track: '#e6ebf3',
+    fill: '#3f74d6',
+    accent: '#3f74d6',
+    caption: '#6b7a90',
   },
 };
 
 const FONT = "system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif";
 const MONO = "ui-monospace, 'Cascadia Code', 'SF Mono', Consolas, monospace";
 
-const NAME_W = 150;
-const BAR_X = 220;
-const BAR_W = 340;
-const PCT_X = 752;
-const ROW_H = 36;
-const TOP_PAD = 34;
-const BOT_PAD = 30;
-const height = TOP_PAD + rows.length * ROW_H + BOT_PAD;
+const PAD = 40;
+const NAME_X = 40;
+const BAR_X = 252;
+const BAR_W = 368;
+const PCT_X = WIDTH - 40;
+const ROW_H = 46;
+const FIRST_BASE = 128;
+const height = FIRST_BASE + (rows.length - 1) * ROW_H + 40;
 
 for (const [theme, c] of Object.entries(THEMES)) {
   const parts = [];
   parts.push(`<svg width="${WIDTH}" height="${height}" viewBox="0 0 ${WIDTH} ${height}" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Доли языков в коде по всем репозиториям">`);
-  parts.push(`<rect width="${WIDTH}" height="${height}" rx="14" fill="${c.bg}"/>`);
-  parts.push(`<rect x="0.5" y="0.5" width="${WIDTH - 1}" height="${height - 1}" rx="13.5" stroke="${c.stroke}"/>`);
-  parts.push(`<text x="40" y="42" fill="${c.caption}" font-family="${MONO}" font-size="12" letter-spacing="2.5">ВСЕ РЕПОЗИТОРИИ</text>`);
-  parts.push(`<text x="40" y="70" fill="${c.name}" font-family="${FONT}" font-size="16" font-weight="600">Языки по байтам кода</text>`);
-  parts.push(`<text x="${WIDTH - 40}" y="70" fill="${c.caption}" font-family="${FONT}" font-size="12" text-anchor="end">включая приватные</text>`);
+  parts.push(`<style>.barfill{transform-box:fill-box;transform-origin:left center;animation:grow .9s cubic-bezier(.2,.7,.2,1) both}@keyframes grow{from{transform:scaleX(0)}}@media (prefers-reduced-motion: reduce){.barfill{animation:none}}</style>`);
+  parts.push(`<rect width="${WIDTH}" height="${height}" rx="22" fill="${c.bg}"/>`);
+  parts.push(`<rect x="0.5" y="0.5" width="${WIDTH - 1}" height="${height - 1}" rx="21.5" stroke="${c.stroke}"/>`);
+  parts.push(`<text x="${PAD}" y="60" fill="${c.accent}" font-family="${MONO}" font-size="13" letter-spacing="2.5">СТЕК</text>`);
+  parts.push(`<text x="${PCT_X}" y="60" fill="${c.caption}" font-family="${FONT}" font-size="13" text-anchor="end">по байтам кода, все репозитории</text>`);
+  parts.push(`<rect x="${PAD}" y="82" width="${WIDTH - PAD * 2}" height="1" fill="${c.stroke}"/>`);
 
   rows.forEach(([name, v], i) => {
-    const y = TOP_PAD + 18 + i * ROW_H;
+    const y = FIRST_BASE + i * ROW_H;
     const p = pct(v);
     const w = Math.max(4, (p / 100) * BAR_W);
     const opacity = 1 - i * 0.09;
-    parts.push(`<text x="40" y="${y + 4}" fill="${c.name}" font-family="${FONT}" font-size="13">${name}</text>`);
-    parts.push(`<rect x="${BAR_X}" y="${y - 4}" width="${BAR_W}" height="8" rx="4" fill="${c.track}"/>`);
-    parts.push(`<rect x="${BAR_X}" y="${y - 4}" width="${w.toFixed(1)}" height="8" rx="4" fill="${c.fill}" opacity="${opacity.toFixed(2)}"/>`);
-    parts.push(`<text x="${PCT_X}" y="${y + 4}" fill="${c.pct}" font-family="${MONO}" font-size="13" text-anchor="end">${fmt(p)}%</text>`);
+    parts.push(`<text x="${NAME_X}" y="${y}" fill="${c.name}" font-family="${FONT}" font-size="16">${name}</text>`);
+    parts.push(`<rect x="${BAR_X}" y="${y - 14}" width="${BAR_W}" height="10" rx="5" fill="${c.track}"/>`);
+    parts.push(`<rect class="barfill" style="animation-delay:${(i * 0.07).toFixed(2)}s" x="${BAR_X}" y="${y - 14}" width="${w.toFixed(1)}" height="10" rx="5" fill="${c.fill}" opacity="${opacity.toFixed(2)}"/>`);
+    parts.push(`<text x="${PCT_X}" y="${y}" fill="${c.pct}" font-family="${MONO}" font-size="16" text-anchor="end">${fmt(p)}%</text>`);
   });
 
   parts.push('</svg>');

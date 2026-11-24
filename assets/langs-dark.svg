@@ -1,35 +1,36 @@
-<svg width="800" height="316" viewBox="0 0 800 316" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Доли языков в коде по всем репозиториям">
-<rect width="800" height="316" rx="14" fill="#0f1318"/>
-<rect x="0.5" y="0.5" width="799" height="315" rx="13.5" stroke="#222a33"/>
-<text x="40" y="42" fill="#6b7684" font-family="ui-monospace, 'Cascadia Code', 'SF Mono', Consolas, monospace" font-size="12" letter-spacing="2.5">ВСЕ РЕПОЗИТОРИИ</text>
-<text x="40" y="70" fill="#dbe2ea" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="16" font-weight="600">Языки по байтам кода</text>
-<text x="760" y="70" fill="#6b7684" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" text-anchor="end">включая приватные</text>
-<text x="40" y="56" fill="#dbe2ea" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13">TypeScript</text>
-<rect x="220" y="48" width="340" height="8" rx="4" fill="#1d232c"/>
-<rect x="220" y="48" width="160.9" height="8" rx="4" fill="#4d8dff" opacity="1.00"/>
-<text x="752" y="56" fill="#8b95a3" font-family="ui-monospace, 'Cascadia Code', 'SF Mono', Consolas, monospace" font-size="13" text-anchor="end">47%</text>
-<text x="40" y="92" fill="#dbe2ea" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13">Java</text>
-<rect x="220" y="84" width="340" height="8" rx="4" fill="#1d232c"/>
-<rect x="220" y="84" width="57.2" height="8" rx="4" fill="#4d8dff" opacity="0.91"/>
-<text x="752" y="92" fill="#8b95a3" font-family="ui-monospace, 'Cascadia Code', 'SF Mono', Consolas, monospace" font-size="13" text-anchor="end">17%</text>
-<text x="40" y="128" fill="#dbe2ea" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13">JavaScript</text>
-<rect x="220" y="120" width="340" height="8" rx="4" fill="#1d232c"/>
-<rect x="220" y="120" width="29.2" height="8" rx="4" fill="#4d8dff" opacity="0.82"/>
-<text x="752" y="128" fill="#8b95a3" font-family="ui-monospace, 'Cascadia Code', 'SF Mono', Consolas, monospace" font-size="13" text-anchor="end">8.6%</text>
-<text x="40" y="164" fill="#dbe2ea" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13">CSS</text>
-<rect x="220" y="156" width="340" height="8" rx="4" fill="#1d232c"/>
-<rect x="220" y="156" width="28.0" height="8" rx="4" fill="#4d8dff" opacity="0.73"/>
-<text x="752" y="164" fill="#8b95a3" font-family="ui-monospace, 'Cascadia Code', 'SF Mono', Consolas, monospace" font-size="13" text-anchor="end">8.2%</text>
-<text x="40" y="200" fill="#dbe2ea" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13">Python</text>
-<rect x="220" y="192" width="340" height="8" rx="4" fill="#1d232c"/>
-<rect x="220" y="192" width="25.9" height="8" rx="4" fill="#4d8dff" opacity="0.64"/>
-<text x="752" y="200" fill="#8b95a3" font-family="ui-monospace, 'Cascadia Code', 'SF Mono', Consolas, monospace" font-size="13" text-anchor="end">7.6%</text>
-<text x="40" y="236" fill="#dbe2ea" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13">Batchfile</text>
-<rect x="220" y="228" width="340" height="8" rx="4" fill="#1d232c"/>
-<rect x="220" y="228" width="16.2" height="8" rx="4" fill="#4d8dff" opacity="0.55"/>
-<text x="752" y="236" fill="#8b95a3" font-family="ui-monospace, 'Cascadia Code', 'SF Mono', Consolas, monospace" font-size="13" text-anchor="end">4.8%</text>
-<text x="40" y="272" fill="#dbe2ea" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13">Other</text>
-<rect x="220" y="264" width="340" height="8" rx="4" fill="#1d232c"/>
-<rect x="220" y="264" width="22.6" height="8" rx="4" fill="#4d8dff" opacity="0.46"/>
-<text x="752" y="272" fill="#8b95a3" font-family="ui-monospace, 'Cascadia Code', 'SF Mono', Consolas, monospace" font-size="13" text-anchor="end">6.7%</text>
+<svg width="800" height="444" viewBox="0 0 800 444" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Доли языков в коде по всем репозиториям">
+<style>.barfill{transform-box:fill-box;transform-origin:left center;animation:grow .9s cubic-bezier(.2,.7,.2,1) both}@keyframes grow{from{transform:scaleX(0)}}@media (prefers-reduced-motion: reduce){.barfill{animation:none}}</style>
+<rect width="800" height="444" rx="22" fill="#101623"/>
+<rect x="0.5" y="0.5" width="799" height="443" rx="21.5" stroke="#1f2a3a"/>
+<text x="40" y="60" fill="#6ea8ff" font-family="ui-monospace, 'Cascadia Code', 'SF Mono', Consolas, monospace" font-size="13" letter-spacing="2.5">СТЕК</text>
+<text x="760" y="60" fill="#7c8aa0" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13" text-anchor="end">по байтам кода, все репозитории</text>
+<rect x="40" y="82" width="720" height="1" fill="#1f2a3a"/>
+<text x="40" y="128" fill="#dfe7f2" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="16">TypeScript</text>
+<rect x="252" y="114" width="368" height="10" rx="5" fill="#1c2635"/>
+<rect class="barfill" style="animation-delay:0.00s" x="252" y="114" width="174.5" height="10" rx="5" fill="#6ea8ff" opacity="1.00"/>
+<text x="760" y="128" fill="#93a1b8" font-family="ui-monospace, 'Cascadia Code', 'SF Mono', Consolas, monospace" font-size="16" text-anchor="end">47.4%</text>
+<text x="40" y="174" fill="#dfe7f2" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="16">Java</text>
+<rect x="252" y="160" width="368" height="10" rx="5" fill="#1c2635"/>
+<rect class="barfill" style="animation-delay:0.07s" x="252" y="160" width="62.9" height="10" rx="5" fill="#6ea8ff" opacity="0.91"/>
+<text x="760" y="174" fill="#93a1b8" font-family="ui-monospace, 'Cascadia Code', 'SF Mono', Consolas, monospace" font-size="16" text-anchor="end">17.1%</text>
+<text x="40" y="220" fill="#dfe7f2" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="16">JavaScript</text>
+<rect x="252" y="206" width="368" height="10" rx="5" fill="#1c2635"/>
+<rect class="barfill" style="animation-delay:0.14s" x="252" y="206" width="30.5" height="10" rx="5" fill="#6ea8ff" opacity="0.82"/>
+<text x="760" y="220" fill="#93a1b8" font-family="ui-monospace, 'Cascadia Code', 'SF Mono', Consolas, monospace" font-size="16" text-anchor="end">8.3%</text>
+<text x="40" y="266" fill="#dfe7f2" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="16">CSS</text>
+<rect x="252" y="252" width="368" height="10" rx="5" fill="#1c2635"/>
+<rect class="barfill" style="animation-delay:0.21s" x="252" y="252" width="29.7" height="10" rx="5" fill="#6ea8ff" opacity="0.73"/>
+<text x="760" y="266" fill="#93a1b8" font-family="ui-monospace, 'Cascadia Code', 'SF Mono', Consolas, monospace" font-size="16" text-anchor="end">8.1%</text>
+<text x="40" y="312" fill="#dfe7f2" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="16">Python</text>
+<rect x="252" y="298" width="368" height="10" rx="5" fill="#1c2635"/>
+<rect class="barfill" style="animation-delay:0.28s" x="252" y="298" width="27.9" height="10" rx="5" fill="#6ea8ff" opacity="0.64"/>
+<text x="760" y="312" fill="#93a1b8" font-family="ui-monospace, 'Cascadia Code', 'SF Mono', Consolas, monospace" font-size="16" text-anchor="end">7.6%</text>
+<text x="40" y="358" fill="#dfe7f2" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="16">Batchfile</text>
+<rect x="252" y="344" width="368" height="10" rx="5" fill="#1c2635"/>
+<rect class="barfill" style="animation-delay:0.35s" x="252" y="344" width="17.8" height="10" rx="5" fill="#6ea8ff" opacity="0.55"/>
+<text x="760" y="358" fill="#93a1b8" font-family="ui-monospace, 'Cascadia Code', 'SF Mono', Consolas, monospace" font-size="16" text-anchor="end">4.8%</text>
+<text x="40" y="404" fill="#dfe7f2" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="16">Other</text>
+<rect x="252" y="390" width="368" height="10" rx="5" fill="#1c2635"/>
+<rect class="barfill" style="animation-delay:0.42s" x="252" y="390" width="24.9" height="10" rx="5" fill="#6ea8ff" opacity="0.46"/>
+<text x="760" y="404" fill="#93a1b8" font-family="ui-monospace, 'Cascadia Code', 'SF Mono', Consolas, monospace" font-size="16" text-anchor="end">6.8%</text>
 </svg>
