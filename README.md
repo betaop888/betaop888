@@ -1,9 +1,4 @@
 <p align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="assets/header-dark.svg">
-    <img src="assets/header-light.svg" width="800" alt="Nertin, betaop888. Minecraft modding, EssentialCrack, full-stack.">
-  </picture>
-</p>
 
 <p align="center">
   <picture>
