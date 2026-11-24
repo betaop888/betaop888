@@ -1,0 +1,35 @@
+<svg width="800" height="316" viewBox="0 0 800 316" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Доли языков в коде по всем репозиториям">
+<rect width="800" height="316" rx="14" fill="#ffffff"/>
+<rect x="0.5" y="0.5" width="799" height="315" rx="13.5" stroke="#d8dee4"/>
+<text x="40" y="42" fill="#6b7684" font-family="ui-monospace, 'Cascadia Code', 'SF Mono', Consolas, monospace" font-size="12" letter-spacing="2.5">ВСЕ РЕПОЗИТОРИИ</text>
+<text x="40" y="70" fill="#1f2733" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="16" font-weight="600">Языки по байтам кода</text>
+<text x="760" y="70" fill="#6b7684" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" text-anchor="end">включая приватные</text>
+<text x="40" y="56" fill="#1f2733" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13">TypeScript</text>
+<rect x="220" y="48" width="340" height="8" rx="4" fill="#e8ecf1"/>
+<rect x="220" y="48" width="160.9" height="8" rx="4" fill="#4d8dff" opacity="1.00"/>
+<text x="752" y="56" fill="#57606a" font-family="ui-monospace, 'Cascadia Code', 'SF Mono', Consolas, monospace" font-size="13" text-anchor="end">47%</text>
+<text x="40" y="92" fill="#1f2733" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13">Java</text>
+<rect x="220" y="84" width="340" height="8" rx="4" fill="#e8ecf1"/>
+<rect x="220" y="84" width="57.2" height="8" rx="4" fill="#4d8dff" opacity="0.91"/>
+<text x="752" y="92" fill="#57606a" font-family="ui-monospace, 'Cascadia Code', 'SF Mono', Consolas, monospace" font-size="13" text-anchor="end">17%</text>
+<text x="40" y="128" fill="#1f2733" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13">JavaScript</text>
+<rect x="220" y="120" width="340" height="8" rx="4" fill="#e8ecf1"/>
+<rect x="220" y="120" width="29.2" height="8" rx="4" fill="#4d8dff" opacity="0.82"/>
+<text x="752" y="128" fill="#57606a" font-family="ui-monospace, 'Cascadia Code', 'SF Mono', Consolas, monospace" font-size="13" text-anchor="end">8.6%</text>
+<text x="40" y="164" fill="#1f2733" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13">CSS</text>
+<rect x="220" y="156" width="340" height="8" rx="4" fill="#e8ecf1"/>
+<rect x="220" y="156" width="28.0" height="8" rx="4" fill="#4d8dff" opacity="0.73"/>
+<text x="752" y="164" fill="#57606a" font-family="ui-monospace, 'Cascadia Code', 'SF Mono', Consolas, monospace" font-size="13" text-anchor="end">8.2%</text>
+<text x="40" y="200" fill="#1f2733" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13">Python</text>
+<rect x="220" y="192" width="340" height="8" rx="4" fill="#e8ecf1"/>
+<rect x="220" y="192" width="25.9" height="8" rx="4" fill="#4d8dff" opacity="0.64"/>
+<text x="752" y="200" fill="#57606a" font-family="ui-monospace, 'Cascadia Code', 'SF Mono', Consolas, monospace" font-size="13" text-anchor="end">7.6%</text>
+<text x="40" y="236" fill="#1f2733" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13">Batchfile</text>
+<rect x="220" y="228" width="340" height="8" rx="4" fill="#e8ecf1"/>
+<rect x="220" y="228" width="16.2" height="8" rx="4" fill="#4d8dff" opacity="0.55"/>
+<text x="752" y="236" fill="#57606a" font-family="ui-monospace, 'Cascadia Code', 'SF Mono', Consolas, monospace" font-size="13" text-anchor="end">4.8%</text>
+<text x="40" y="272" fill="#1f2733" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13">Other</text>
+<rect x="220" y="264" width="340" height="8" rx="4" fill="#e8ecf1"/>
+<rect x="220" y="264" width="22.6" height="8" rx="4" fill="#4d8dff" opacity="0.46"/>
+<text x="752" y="272" fill="#57606a" font-family="ui-monospace, 'Cascadia Code', 'SF Mono', Consolas, monospace" font-size="13" text-anchor="end">6.7%</text>
+</svg>
